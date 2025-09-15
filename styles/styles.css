@@ -1,6 +1,22 @@
 main {
 	max-width: 840px;
 }
+
+nav {
+	background-color: darkblue;
+	padding: 10px;
+}
+
+nav a {
+	color: white;
+	display: block;
+	padding: 20px;
+}
+
+h1 {
+	color: darkblue;
+}
+
 aside {
 	width: 20rem;
 	margin: 1rem;
@@ -12,6 +28,11 @@ aside {
 }
 
 aside img {
+	max-width: 200px;
+	height: auto;
+}
+
+img {
 	max-width: 200px;
 	height: auto;
 }
