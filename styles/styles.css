@@ -8,24 +8,43 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+header, footer, .grid {
 	max-width: 840px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+main {
 	padding: 10px;
 }
 
 nav {
 	background-color: darkblue;
 	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 nav a {
 	color: white;
 	display: block;
 	padding: 20px;
+	text-decoration: none;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: 700;
 }
 
 h1 {
 	color: darkblue;
+	border-bottom: 1px solid #333;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 img {
@@ -40,6 +59,8 @@ aside {
 	width: 20rem;
 	text-align: center;
 	position: relative;
+	grid-column: 1;
+	grid-row: 1;
 }
 
 aside h2 {
